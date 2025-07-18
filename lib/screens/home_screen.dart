@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 title: Text(
-                  'الحضور المريح',
+                  'إدارة العمال',
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: colorScheme.onPrimaryContainer,
                     fontWeight: FontWeight.bold,
@@ -75,25 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                  child: SafeArea(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const SizedBox(height: 40),
-                          Text(
-                            dateFormatter.format(today),
-                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: colorScheme.onPrimaryContainer.withValues(alpha: 0.8),
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                        ],
-                      ),
-                    ),
-                  ),
+                  
                 ),
               ),
             ),

@@ -258,37 +258,26 @@ class _AttendanceHistoryScreenState extends State<AttendanceHistoryScreen> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              subtitle: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    worker?.position ?? '',
-                                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                      color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 4),
-                                  Text(
-                                    dateFormatter.format(attendance.date),
+                              subtitle:  Text(
+                                    // dateFormatter.format(attendance.date),
+                                    attendance.date.toString().substring(0, 10),
                                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                       color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.5),
                                     ),
                                   ),
-                                ],
-                              ),
                               trailing: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   AttendanceBadge(status: attendance.status),
-                                  if (worker != null) ...[
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      worker.employeeId,
-                                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                        color: Theme.of(context).colorScheme.primary,
-                                      ),
-                                    ),
-                                  ],
+                                  // if (worker != null) ...[
+                                  //   const SizedBox(height: 4),
+                                  //   Text(
+                                  //     worker.employeeId,
+                                  //     style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                  //       color: Theme.of(context).colorScheme.primary,
+                                  //     ),
+                                  //   ),
+                                  // ],
                                 ],
                               ),
                             ),

@@ -168,12 +168,7 @@ class _AddEditWorkerScreenState extends State<AddEditWorkerScreen> {
                         filled: true,
                         fillColor: Theme.of(context).colorScheme.surface,
                       ),
-                      validator: (value) {
-                        if (value == null || value.trim().isEmpty) {
-                          return 'الرجاء إدخال رقم الموظف';
-                        }
-                        return null;
-                      },
+                      
                     ),
                     const SizedBox(height: 16),
                     TextFormField(
@@ -188,12 +183,7 @@ class _AddEditWorkerScreenState extends State<AddEditWorkerScreen> {
                         fillColor: Theme.of(context).colorScheme.surface,
                       ),
                       keyboardType: TextInputType.phone,
-                      validator: (value) {
-                        if (value == null || value.trim().isEmpty) {
-                          return 'الرجاء إدخال رقم الهاتف';
-                        }
-                        return null;
-                      },
+                      
                     ),
                   ],
                 ),
@@ -235,12 +225,7 @@ class _AddEditWorkerScreenState extends State<AddEditWorkerScreen> {
                         filled: true,
                         fillColor: Theme.of(context).colorScheme.surface,
                       ),
-                      validator: (value) {
-                        if (value == null || value.trim().isEmpty) {
-                          return 'الرجاء إدخال القسم';
-                        }
-                        return null;
-                      },
+                     
                     ),
                     const SizedBox(height: 16),
                     TextFormField(
@@ -254,12 +239,7 @@ class _AddEditWorkerScreenState extends State<AddEditWorkerScreen> {
                         filled: true,
                         fillColor: Theme.of(context).colorScheme.surface,
                       ),
-                      validator: (value) {
-                        if (value == null || value.trim().isEmpty) {
-                          return 'الرجاء إدخال المنصب';
-                        }
-                        return null;
-                      },
+                     
                     ),
                   ],
                 ),
